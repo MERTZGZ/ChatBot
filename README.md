@@ -1,0 +1,23 @@
+NLP Preprocessing with NLTK
+
+One of the main issues with text data is that it is in the form of strings.
+However, machine learning algorithms require a numerical feature vector in order to perform their tasks.
+Therefore, before starting any NLP project, we must preprocess the text data to make it suitable for training. Basic text preprocessing includes:
+
+Converting the entire text to uppercase or lowercase to prevent the algorithm from treating the same words differently in different cases.
+
+Tokenization: Tokenization is the term used to describe the process of converting normal text strings into a token list, i.e. the words we want.
+A sentence tokenizer can be used to find a list of sentences and a word tokenizer can be used to find a list of words in the sentences.
+The NLTK data package contains a pre-trained Punkt Tokenizer for English.
+
+Noise Removal: Removing anything that is not a standard number or letter.
+
+Removing Stop Words: Sometimes, some extremely common words that appear to have little value in helping to select documents relevant to a user's needs are completely removed from the vocabulary.
+These words are called stop words.
+
+Stemming: Stemming is the process of reducing inflected (or sometimes derived) words to their base, root, or stem form (typically a written word form).
+For example, if we stemmed the words "Stems", "Stemming", "Stemmed", and "Stemmization", the result would be a single word, "stem".
+
+Lemmatization: Lemmatization is a slight variation on stemming. The biggest difference between the two is that stemming can often create non-existent words, whereas lemmas are actual words.
+So, the root word you end up with after lemmatization can be looked up in a dictionary, whereas the one from stemming may not be.
+For example, the lemma of "running", "ran", and "run" would be "run" and the lemma of "better" and "good" would be "good".
